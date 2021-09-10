@@ -3,5 +3,5 @@
 ## 1. Cấu trúc thư mục
 
 ### a) Trên Apache NetBeans
-![NetBeans Image](screenshots\nb.png)
+![NetBeans screenshort](screenshots/nb.png)
 ### b) Trên Visual Studio Code
