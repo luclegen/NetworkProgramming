@@ -14,7 +14,7 @@ Download tại: [https://github.com/shiftkey/desktop/releases/](https://github.c
 
 ## II. Cài đặt IDE/Code Editor
 
-Chọn 1 trong 2 dưới đây:
+Cài cả hai:
 
 ### 1. Visual Studio Code (Code Editor)
 
