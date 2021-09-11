@@ -10,9 +10,9 @@ Chọn 1 trong 2 dưới đây:
 
 Download tại: [https://code.visualstudio.com/](https://code.visualstudio.com/)
 
-#### a) Cài đặt tiện tích cho VSCode
+#### Cài đặt tiện tích cho Java
 
-Download tại: [vscode:extension/vscjava.vscode-java-pack](vscode:extension/vscjava.vscode-java-pack)
+Download tại: [https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack)
 
 ### 2. Apache NetBeans LTS (IDE)
 
