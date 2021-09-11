@@ -8,11 +8,11 @@ Chọn 1 trong 2 dưới đây:
 
 ### 1. Visual Studio Code (Code Editor)
 
-Download tại: [https://code.visualstudio.com/]()
+Download tại: [https://code.visualstudio.com/](https://code.visualstudio.com/)
 
 ### 2. Apache NetBeans LTS (IDE)
 
-Download tại: [https://netbeans.apache.org/download/index.html]()
+Download tại: [https://netbeans.apache.org/download/](https://netbeans.apache.org/download/)
 
 ## II. Cài đặt Java
 
@@ -26,9 +26,9 @@ Download tại: [https://netbeans.apache.org/download/index.html]()
 
 `Lưu ý: Kiểm tra giờ và ngày trước khi cài đặt.`
 
-**Bước 1:** Mở Terminal và gõ những dòng lệnh sau:
+Mở Terminal và gõ những dòng lệnh sau:
 
 ```shell
-sudo apt update
+sudo apt -y update
 sudo apt install -y default-jdk default-jre
 ```
