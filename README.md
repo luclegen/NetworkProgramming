@@ -20,9 +20,13 @@ Cài cả hai:
 
 Download tại: [https://code.visualstudio.com/](https://code.visualstudio.com/)
 
-#### Cài đặt tiện tích cho Java
+#### a) Cài đặt tiện tích cho Java
 
 Download tại: [https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack)
+
+#### **b) Cài đặt tiện tích cho PDF**
+
+Download tại: [https://marketplace.visualstudio.com/items?itemName=tomoki1207.pdf](https://marketplace.visualstudio.com/items?itemName=tomoki1207.pdf)
 
 ### 2. Apache NetBeans LTS (IDE)
 
