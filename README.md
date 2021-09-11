@@ -18,7 +18,7 @@ Download tại: [https://netbeans.apache.org/download/index.html]()
 
 ### 1. macOS và Windows
 
-**Bước 1:** Mở VSCode lên vào nhấn `Ctrl + Shift + P` rồi gõ: `"Java: Conf"` và chọn Java: `Configure Java Runtime`.
+**Bước 1:** Mở VSCode lên vào nhấn `Ctrl + Shift + P` rồi gõ: `"Java: Conf"` và chọn `Java: Configure Java Runtime`.
 
 **Bước 2:** Chọn `OpenJDK 11 (LTS)` và `Hotspot (Recommended)` và nhấn `Download`.
 
