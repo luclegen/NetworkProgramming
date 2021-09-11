@@ -28,6 +28,10 @@ Download tại: [https://marketplace.visualstudio.com/items?itemName=vscjava.vsc
 
 Download tại: [https://marketplace.visualstudio.com/items?itemName=tomoki1207.pdf](https://marketplace.visualstudio.com/items?itemName=tomoki1207.pdf)
 
+#### c) Cài đặt tiện tích cho Git
+
+Download tại: [https://marketplace.visualstudio.com/items?itemName=donjayamanne.githistory](https://marketplace.visualstudio.com/items?itemName=donjayamanne.githistory)
+
 ### 2. Apache NetBeans LTS (IDE)
 
 Download tại: [https://netbeans.apache.org/download/](https://netbeans.apache.org/download/)
