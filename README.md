@@ -36,7 +36,32 @@ Download tại: [https://marketplace.visualstudio.com/items?itemName=donjayamann
 
 Download tại: [https://netbeans.apache.org/download/](https://netbeans.apache.org/download/)
 
-## III. Cài đặt Java
+## III. Cài đặt và thiết lập Git
+
+Download tại: [https://git-scm.com/](https://git-scm.com/)
+
+#### Bước 1: Mở Git bash hoặc Terminal để thiết lập git bằng cách sao chép rồi dán vào VSCode và điền thông tin vào đoạn lệnh sau:
+
+```shell
+git config --global user.name "Ho Va Ten"
+git config --global user.email "username@email.com"
+
+ssh-keygen -t ed25519 -C "username@email.com"
+
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_ed25519
+cat ~/.ssh/id_ed25519.pub
+```
+
+#### Bước 2: Copy dòng tương tự như vầy:
+
+`ssh-ed25519 ... username@email.com`
+
+#### Bước 3: Thêm SSH keys vào tài khoản của bạn:
+
+Vào trang: [https://github.com/settings/keys](https://github.com/settings/keys) . Sau đó nhấn vào nút `New SSH key` rồi dán vào `Key` rồi đặt tiêu đề. Cuối cùng nhấn vào `Add SSH key`.
+
+## IV. Cài đặt Java
 
 ### 1. macOS và Windows
 
