@@ -30,7 +30,7 @@ Download tại: [https://netbeans.apache.org/download/](https://netbeans.apache.
 
 `Lưu ý: Kiểm tra giờ và ngày trước khi cài đặt.`
 
-Mở Terminal và gõ những dòng lệnh sau:
+Mở Terminal và copy những dòng lệnh sau:
 
 ```shell
 sudo apt -y update
