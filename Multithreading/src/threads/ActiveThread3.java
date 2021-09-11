@@ -1,5 +1,6 @@
 package threads;
 
+import java.io.IOException;
 import java.util.*;
 
 public class ActiveThread3 extends Thread {
@@ -38,23 +39,22 @@ public class ActiveThread3 extends Thread {
 	@SuppressWarnings("deprecation")
 	@Override
 	public void run() {
-		synchronized (this) {
-			String task = "";
+		String task = "";
 
+		while (true) {
 			switch (this.id) {
 				case 1:
-					task = "\n[LUỒNG " + this.id + "]: cứ mỗi 2 giây sẽ tạo ra 1 số nguyên ngẫu nhiên trong khoảng từ 1 đến 20.";
-					System.out.println(task);
+					task = "\n[LUỒNG " + this.id
+							+ "]: cứ mỗi 2000 miligiây sẽ tạo ra 1 số nguyên ngẫu nhiên trong khoảng từ 1 đến 20.";
 					this.sleep(2000);
-					System.out.println(r = (int) (1 + Math.round(Math.random() * 19)));
+					System.out.println(task + "\n" + (r = (int) (1 + Math.round(Math.random() * 19))));
 					break;
 
 				case 2:
 					task = "\n[LUỒNG " + this.id
-							+ "]: cứ mỗi 1 giây sẽ lấy số ngẫu nhiên mà Luồng 1 tạo ra rồi tính\nbình phương của nó và hiển thị ra màn hình.";
-					System.out.println(task);
+							+ "]: cứ mỗi 5000 miligiây sẽ lấy số ngẫu nhiên mà Luồng 1 tạo ra rồi tính\nbình phương của nó và hiển thị ra màn hình.";
 					this.sleep(5000);
-					System.out.println((int) Math.pow(r, 2));
+					System.out.println(task + "\n" + (int) Math.pow(r, 2));
 					break;
 
 				default:
@@ -66,26 +66,25 @@ public class ActiveThread3 extends Thread {
 
 					for (Thread thread : threads) {
 						thread.start();
-						System.out.print("\n[LUỒNG " + (threads.indexOf(thread) + 1) + "] đã khởi chạy...");
+						System.out.print("\n[LUỒNG " + thread.getId() + "] đã khởi chạy...");
 
-						synchronized (thread) {
+						if (thread.getId() == 2)
 							try {
-								System.out.print("\n[LUỒNG " + (threads.indexOf(thread) + 1) + "] đang chờ...");
-								thread.wait();
-							} catch (InterruptedException e) {
+								System.out.println("\nNhấn ENTER để dừng.");
+								System.in.read();
+							} catch (IOException e) {
 								e.printStackTrace();
 							}
-						}
 					}
 
 					for (Thread thread : threads) {
 						thread.stop();
-						System.out.print("\n[LUỒNG " + (threads.indexOf(thread) + 1) + "] đã dừng.");
+						System.out.print("\n[LUỒNG " + thread.getId() + "] đã dừng.");
 					}
-					break;
-			}
 
-			this.notifyAll();
+					threads.clear();
+					return;
+			}
 		}
 	}
 
