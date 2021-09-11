@@ -152,7 +152,7 @@ public class App {
         break;
 
       default:
-        System.err.println("LỖI: Số bài tập không hợp lệ!");
+        System.err.println("LỖI: Số bài tập không hợp lệ!\n");
         break;
     }
 
