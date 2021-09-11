@@ -2,7 +2,17 @@
 
 Network Programming (Workspace)
 
-## I. Cài đặt IDE/Code Editor
+## I. Cài đặt GitHub Desktop
+
+### 1. macOS và Windows
+
+Download tại: [https://desktop.github.com/](https://desktop.github.com/)
+
+### 2. Ubuntu
+
+Download tại: [https://github.com/shiftkey/desktop/releases/](https://github.com/shiftkey/desktop/releases/)
+
+## II. Cài đặt IDE/Code Editor
 
 Chọn 1 trong 2 dưới đây:
 
@@ -18,7 +28,7 @@ Download tại: [https://marketplace.visualstudio.com/items?itemName=vscjava.vsc
 
 Download tại: [https://netbeans.apache.org/download/](https://netbeans.apache.org/download/)
 
-## II. Cài đặt Java
+## III. Cài đặt Java
 
 ### 1. macOS và Windows
 
