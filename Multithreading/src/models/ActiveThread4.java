@@ -1,4 +1,4 @@
-package threads;
+package models;
 
 import java.io.*;
 import java.math.BigInteger;
