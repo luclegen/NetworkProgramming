@@ -16,7 +16,7 @@ public class Input {
       System.out.print(description);
       setInput();
 
-      if (type == "integer" && Check.isInteger(input))
+      if (type == "integer" && Checker.isInteger(input))
         return new BigInteger(input);
       else
         Error.invail(type);
@@ -28,9 +28,9 @@ public class Input {
       System.out.print(description);
       setInput();
 
-      if (type == "decimal" && Check.isDecimal(input))
+      if (type == "decimal" && Checker.isDecimal(input))
         break;
-      else if (type == "length" && Check.isSize(input))
+      else if (type == "length" && Checker.isSize(input))
         break;
       else
         Error.invail(type);
@@ -43,7 +43,7 @@ public class Input {
       System.out.print(description);
       setInput();
 
-      if (Check.isWidth(input, length))
+      if (Checker.isWidth(input, length))
         break;
       else
         Error.invail("width");

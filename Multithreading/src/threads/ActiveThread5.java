@@ -44,7 +44,7 @@ public class ActiveThread5 extends Thread {
 
 					System.out.println("Các số nguyên tố cần tìm:");
 					for (int i = 1; i <= 1000; i++)
-						if (Check.isPrime(i))
+						if (Checker.isPrime(i))
 							p.add(i);
 
 					for (int i = 0; i < p.size(); i++)

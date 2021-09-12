@@ -45,7 +45,7 @@ public class ActiveThread1 extends Thread {
 					task = "\n[TUYẾN " + this.id + "] Thực hiện in các số lẻ nhỏ hơn số nguyên n = " + n;
 					System.out.println(task);
 					for (BigInteger i = BigInteger.ZERO; i.compareTo(n) < 0; i = i.add(BigInteger.ONE))
-						if (!Check.isEven(i))
+						if (!Checker.isEven(i))
 							Output.block(i, "10", "9");
 					System.out.println();
 					break;
@@ -54,7 +54,7 @@ public class ActiveThread1 extends Thread {
 					task = "\n[TUYẾN " + this.id + "] Thực hiện in các số chẵn nhỏ hơn số nguyên n = " + n;
 					System.out.println(task);
 					for (BigInteger i = BigInteger.ZERO; i.compareTo(n) < 0; i = i.add(BigInteger.ONE))
-						if (Check.isEven(i))
+						if (Checker.isEven(i))
 							Output.block(i, "10", "8");
 					break;
 

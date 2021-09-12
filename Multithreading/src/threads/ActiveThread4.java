@@ -3,7 +3,7 @@ package threads;
 import java.io.*;
 import java.math.BigInteger;
 
-import helpers.Check;
+import helpers.Checker;
 
 public class ActiveThread4 extends Thread {
 	private BigInteger id, n;
@@ -28,7 +28,7 @@ public class ActiveThread4 extends Thread {
 			String task = "\n[TUYẾN " + this.id + "] Kiểm tra số " + n + " có phải là số nguyên tố cần tìm.";
 			System.out.println(task);
 
-			if (Check.isPrime(n)) {
+			if (Checker.isPrime(n)) {
 				System.out.println(n + " là số nguyên tố cần tìm.");
 				out.print(n + " ");
 				out.flush();

@@ -3,7 +3,7 @@ package helpers;
 import java.math.*;
 import java.util.regex.Pattern;
 
-public class Check {
+public class Checker {
 
 	public static boolean isInteger(String input) {
 		return Pattern.matches("^[-+]?\\d+", input);
