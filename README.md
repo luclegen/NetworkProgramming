@@ -4,12 +4,8 @@ Network Programming (Workspace)
 
 ## NetworkTeam4
 
-<<<<<<< HEAD
 1. Huỳnh Tấn Lực - 16CNTT1: huynhtanluc.auto@gmail.com
 2. Trần Văn Khải - 19CNTT1: vankhaihpb@gmail.com
-=======
-1. Huỳnh Tấn Lực - 16CNTT1: huynhtanluc.auto@gmail.coma
->>>>>>> 237cc7ca15f511addf6aa7cbd7f33e507e6fc090
 
 ## I. Cài đặt GitHub Desktop
 
