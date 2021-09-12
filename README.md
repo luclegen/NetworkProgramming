@@ -79,3 +79,19 @@ Mở Terminal và copy những dòng lệnh sau:
 sudo apt -y update
 sudo apt install -y default-jdk default-jre
 ```
+
+## IV. Sử dụng Git
+
+#### 1. Các dòng commit (cam kết) cơ bản
+
+Create: Tạo mới một thứ gì đó chưa có.
+Add: Thêm một thứ đã có sẵn.
+Update: Cập nhật một/hàng loạt thứ gì đó.
+Modify: Cập nhật một thay đổi.
+Remove: Loại bỏ một thứ gì đó thứ đó có thể thêm trở lại.
+Delete: Xóa bỏ một thứ gì đó mà mình không đề cập tới nó nữa.
+
+#### 2. Phương thức giao tiếp
+
+1. Pull (Download): Kéo các commit về máy tính.
+2. Push (Upload): Đẩy các commit lên đám mây.
