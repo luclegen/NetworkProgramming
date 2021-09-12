@@ -93,13 +93,13 @@ sudo apt install -y default-jdk default-jre
 
 #### 1. Các dòng commit (cam kết) cơ bản
 
-Create: Tạo mới một thứ gì đó chưa có.
-Add: Thêm một thứ đã có sẵn.
-Update: Cập nhật một/hàng loạt thứ gì đó.
-Modify: Cập nhật một thay đổi nhỏ.
-Move: Di chuyển từ cái này sang cái kia.
-Remove: Loại bỏ một thứ gì đó thứ đó có thể thêm trở lại.
-Delete: Xóa bỏ một thứ gì đó mà mình không đề cập tới nó nữa.
+* Create: Tạo mới một thứ gì đó chưa có.
+* Add: Thêm một thứ đã có sẵn.
+* Update: Cập nhật một/hàng loạt thứ gì đó.
+* Modify: Cập nhật một thay đổi nhỏ.
+* Move: Di chuyển từ cái này sang cái kia.
+* Remove: Loại bỏ một thứ gì đó thứ đó có thể thêm trở lại.
+* Delete: Xóa bỏ một thứ gì đó mà mình không đề cập tới nó nữa.
 
 #### 2. Phương thức giao tiếp
 
