@@ -4,8 +4,12 @@ Network Programming (Workspace)
 
 ## NetworkTeam4
 
+<<<<<<< HEAD
 1. Huỳnh Tấn Lực - 16CNTT1: huynhtanluc.auto@gmail.com
 2. Trần Văn Khải - 19CNTT1: vankhaihpb@gmail.com
+=======
+1. Huỳnh Tấn Lực - 16CNTT1: huynhtanluc.auto@gmail.coma
+>>>>>>> 237cc7ca15f511addf6aa7cbd7f33e507e6fc090
 
 ## I. Cài đặt GitHub Desktop
 
@@ -96,7 +100,7 @@ sudo apt install -y default-jdk default-jre
 Create: Tạo mới một thứ gì đó chưa có.
 Add: Thêm một thứ đã có sẵn.
 Update: Cập nhật một/hàng loạt thứ gì đó.
-Modify: Cập nhật một thay đổi.
+Modify: Cập nhật một thay đổi nhỏ.
 Remove: Loại bỏ một thứ gì đó thứ đó có thể thêm trở lại.
 Delete: Xóa bỏ một thứ gì đó mà mình không đề cập tới nó nữa.
 
