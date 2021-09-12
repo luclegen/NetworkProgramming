@@ -29,7 +29,7 @@ Download tại: [https://code.visualstudio.com/](https://code.visualstudio.com/)
 
 Download tại: [https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack)
 
-#### **b) Cài đặt tiện tích cho PDF**
+#### b) Cài đặt tiện tích cho PDF
 
 Download tại: [https://marketplace.visualstudio.com/items?itemName=tomoki1207.pdf](https://marketplace.visualstudio.com/items?itemName=tomoki1207.pdf)
 
