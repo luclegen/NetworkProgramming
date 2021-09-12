@@ -32,7 +32,11 @@ Download tại: [https://marketplace.visualstudio.com/items?itemName=vscjava.vsc
 
 Download tại: [https://marketplace.visualstudio.com/items?itemName=tomoki1207.pdf](https://marketplace.visualstudio.com/items?itemName=tomoki1207.pdf)
 
-#### c) Cài đặt tiện tích cho Git
+#### c) Cài đặt tiện tích cho Office
+
+Download tại: [https://marketplace.visualstudio.com/items?itemName=cweijan.vscode-office](https://marketplace.visualstudio.com/items?itemName=cweijan.vscode-office)
+
+#### d) Cài đặt tiện tích cho Git
 
 Download tại: [https://marketplace.visualstudio.com/items?itemName=donjayamanne.githistory](https://marketplace.visualstudio.com/items?itemName=donjayamanne.githistory)
 
