@@ -45,14 +45,14 @@ public class ActiveThread3 extends Thread {
 			switch (this.id) {
 				case 1:
 					task = "\n[LUỒNG " + this.id
-							+ "]: cứ mỗi 2000 miligiây sẽ tạo ra 1 số nguyên ngẫu nhiên trong khoảng từ 1 đến 20.";
+							+ "] cứ mỗi 2000 miligiây sẽ tạo ra 1 số nguyên ngẫu nhiên trong khoảng từ 1 đến 20.";
 					this.sleep(2000);
 					System.out.println(task + "\n" + (r = (int) (1 + Math.round(Math.random() * 19))));
 					break;
 
 				case 2:
 					task = "\n[LUỒNG " + this.id
-							+ "]: cứ mỗi 5000 miligiây sẽ lấy số ngẫu nhiên mà Luồng 1 tạo ra rồi tính\nbình phương của nó và hiển thị ra màn hình.";
+							+ "] cứ mỗi 5000 miligiây sẽ lấy số ngẫu nhiên mà Luồng 1 tạo ra rồi tính\nbình phương của nó và hiển thị ra màn hình.";
 					this.sleep(5000);
 					System.out.println(task + "\n" + (int) Math.pow(r, 2));
 					break;
