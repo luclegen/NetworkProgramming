@@ -20,6 +20,10 @@ public class Error {
 			case "width":
 				name = "Chiều rộng";
 				break;
+
+			default:
+				name = "invail";
+				break;
 		}
 		System.err.println("LỖI: " + name + " không hợp lệ, vui lòng nhập lại!\n");
 	}
