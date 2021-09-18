@@ -105,3 +105,11 @@ sudo apt install -y default-jdk default-jre
 
 1. Pull (Download): Kéo các commit về máy tính.
 2. Push (Upload): Đẩy các commit lên đám mây.
+
+## V. Các thư mục
+
+* `docs`: Tài liệu.
+* `clis`: Các thành phần của giao diện dòng lệnh.
+* `examples`: Các ví dụ.
+* `helpers`: Các thành phần hỗ trợ.
+* `models`: Các lớp của các đối tượng
