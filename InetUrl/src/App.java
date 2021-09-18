@@ -74,7 +74,7 @@ public class App {
 
         break;
 
-      case 4: // Bài tập 3
+      case 4: // Bài tập 4
 
         break;
 
