@@ -129,5 +129,4 @@ sudo apt install -y default-jdk default-jre
 
 ### 2. Công thức tính tỷ lệ đóng góp
 
-<!-- $Tỷ~lệ~đóng~góp = \frac{\sum dấu~kiểm}{5}\times 50 + {Tỷ~lệ~dự~án} $ -->
-$\int_0^\infty \mathrm{e}^{-x},\mathrm{d}x$	
+![Ratio](screenshots/ratio.png)
