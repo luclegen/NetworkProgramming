@@ -109,10 +109,11 @@ sudo apt install -y default-jdk default-jre
 ## V. Các thư mục
 
 * `docs`: Tài liệu.
+* `src`: Chứa mã nguồn.
 * `clis`: Các thành phần của giao diện dòng lệnh.
 * `examples`: Các ví dụ.
 * `helpers`: Các thành phần hỗ trợ.
-* `models`: Các lớp của các đối tượng
+* `models`: Các lớp của các đối tượng.
 
 ## VI. Đánh giá
 
