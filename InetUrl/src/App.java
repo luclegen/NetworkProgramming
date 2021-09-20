@@ -1,9 +1,10 @@
 import java.io.*;
 import java.net.*;
-import java.util.Scanner;
+import java.util.*;
 
-import apps.Web;
+import apps.*;
 import clis.*;
+import helpers.*;
 import helpers.Error;
 
 public class App {
@@ -91,7 +92,18 @@ public class App {
         break;
 
       case 4: // Bài tập 4
+        try {
+          u = new URL("https://www.facebook.com/");
+          URLConnection connection = u.openConnection();
 
+          System.out.println(VNDateTime.getDate("Ngày tạo: ", connection.getDate()));
+          System.out.println(VNDateTime.getDate("Ngày cập nhật lần cuối: ", connection.getLastModified()));
+          System.out.println(VNDateTime.getDate("Ngày hết hạn: ", connection.getExpiration()));
+        } catch (MalformedURLException e) {
+          Error.invalid("url");
+        } catch (IOException e) {
+          Notification.fail("connect");
+        }
         break;
 
       case 5: // Bài tập 5
