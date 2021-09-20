@@ -57,4 +57,12 @@ public class Checker {
 
   // #endregion NETWORK
 
+  // region TIME
+
+  public static boolean isDate(long d) {
+    return d != 0;
+  }
+
+  // endregion TIME
+
 }
