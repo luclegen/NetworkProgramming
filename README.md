@@ -109,6 +109,7 @@ sudo apt install -y default-jdk default-jre
 
 * `docs`: Tài liệu.
 * `src`: Chứa mã nguồn.
+* `apps`: Các ứng dụng.
 * `clis`: Các thành phần của giao diện dòng lệnh.
 * `examples`: Các ví dụ.
 * `helpers`: Các thành phần hỗ trợ.
