@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+import apps.Web;
 import clis.*;
 import helpers.Error;
 
@@ -50,7 +51,7 @@ public class App {
             break;
 
           default:
-            Error.invail("answer");
+            Error.invalid("answer");
         }
       } while (true);
 
@@ -83,7 +84,7 @@ public class App {
         break;
 
       case 6: // Bài tập 6
-
+        Web.run();
         break;
 
       default:
