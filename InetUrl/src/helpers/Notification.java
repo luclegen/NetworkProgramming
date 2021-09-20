@@ -19,10 +19,10 @@ public class Notification {
     System.err.println("THÔNG BÁO: " + msg + ".\n");
   }
 
-  public static void fail(String type, String spec) {
+  public static void fail(String type) {
     String msg = null;
     switch (type) {
-      case "url":
+      case "connect":
         msg = "Kết nối thất bại";
         break;
 
