@@ -74,7 +74,7 @@ public class App {
         System.out.println("Tên file: " + u.getFile());
         System.out.println("Tên host: " + u.getHost());
         System.out.println("Số hiệu cổng: " + u.getPort());
-        System.out.print("Kiểu giao thức: " + u.getProtocol());
+        System.out.println("Kiểu giao thức: " + u.getProtocol());
         break;
 
       case 2: // Bài tập 2
@@ -87,7 +87,7 @@ public class App {
         System.out.println("Địa chỉ của localhost:");
         System.out.println(InetAddress.getLocalHost());
         System.out.println("\nĐịa chỉ của trang web Oracle:");
-        System.out.print(InetAddress.getByName("www.oracle.com") + "\n");
+        System.out.println(InetAddress.getByName("www.oracle.com") + "\n");
         break;
 
       case 4: // Bài tập 4
