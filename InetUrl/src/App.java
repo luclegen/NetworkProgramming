@@ -1,3 +1,5 @@
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.Scanner;
 
 import apps.Web;
@@ -58,13 +60,19 @@ public class App {
     } while (true);
   }
 
-  private static void ex(int index) {
+  private static void ex(int index) throws MalformedURLException {
     Layout exLayout = new Layout(width, "BÀI TẬP " + index);
     exLayout.header(2);
 
     switch (index) {
       case 1: // Bài tập 1
+        URL u = new URL("https", "www.apple.com", 9999, "/mac/");
 
+        System.out.println("Thông tin về URL: " + u.toString());
+        System.out.println("Tên file: " + u.getFile());
+        System.out.println("Tên host: " + u.getHost());
+        System.out.println("Số hiệu cổng: " + u.getPort());
+        System.out.println("Kiểu giao thức: " + u.getProtocol() + "\n");
         break;
 
       case 2: // Bài tập 2
