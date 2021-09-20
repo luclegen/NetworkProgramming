@@ -17,7 +17,7 @@ public class VNDateTime {
 
   @Deprecated
   public static String getMonth() {
-    return (date.getMonth() < 9 ? "0" : "") + date.getMonth() + 1;
+    return (date.getMonth() < 9 ? "0" : "") + (date.getMonth() + 1);
   }
 
   @Deprecated
@@ -27,6 +27,19 @@ public class VNDateTime {
 
   public static String getDate() {
     return getDay() + "/" + getMonth() + "/" + getYear();
+  }
+
+  public static String getDate(Date d) {
+    date = d;
+    return getDate();
+  }
+
+  public static String getDate(LocalDateTime d) {
+    return d.format(df);
+  }
+
+  public static String getDate(String description, long d) {
+    return description + (Checker.isDate(d) ? getDate(new Date(d)) : "Không xác định.");
   }
 
   @Deprecated
@@ -68,15 +81,6 @@ public class VNDateTime {
 
   public static String getDateShortTime(LocalDateTime d) {
     return d.format(df) + " vào lúc " + d.format(stf);
-  }
-
-  public static String getDate(Date d) {
-    date = d;
-    return getDate();
-  }
-
-  public static String getDate(LocalDateTime d) {
-    return d.format(df);
   }
 
   public static String getTime(Date d) {
