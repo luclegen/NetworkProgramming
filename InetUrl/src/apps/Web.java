@@ -49,7 +49,7 @@ public class Web {
         addresses.add(new Address(url));
         Notification.success("url");
       } else
-        Notification.fail("url", url);
+        Notification.fail("connect");
     } while (Checker.isContinue());
     System.out.println();
   }
