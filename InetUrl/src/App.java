@@ -80,7 +80,7 @@ public class App {
       case 2: // Bài tập 2
         u = new URL("https://github.com/luclegen");
 
-        System.out.print(u.getContent());
+        System.out.print("Toàn bộ nội dung của trang web:\n" + u.getContent());
         break;
 
       case 3: // Bài tập 3
