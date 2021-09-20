@@ -78,7 +78,9 @@ public class App {
         break;
 
       case 2: // Bài tập 2
+        u = new URL("https://github.com/luclegen");
 
+        System.out.print(u.getContent());
         break;
 
       case 3: // Bài tập 3
