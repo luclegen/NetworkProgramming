@@ -121,7 +121,7 @@ sudo apt install -y default-jdk default-jre
 ### 1. Bảng kiểm tra
 | STT | Họ và tên                 | 1    | 2    | 3 | 4 | 5 | Dự án |
 | :-: | ---------------------------- | ---- | ---- | - | - | - | ------- |
-|  1  | Huỳnh Tấn Lực – 16CNTT1  | :heavy_check_mark: | :heavy_check_mark: |   |   |   |         |
+|  1  | Huỳnh Tấn Lực – 16CNTT1  | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |   |   |         |
 |  2  | Ngô Hoàng Thiện – 17CNTT2 | :heavy_check_mark: | :heavy_check_mark: |   |   |   |         |
 |  3  | Nguyễn Đắc Minh – 19CNTT1 | :x: | :x: |   |   |   |         |
 |  4  | Tăng Tấn Doan – 19CTUD     | :heavy_check_mark: | :x: |   |   |   |         |
