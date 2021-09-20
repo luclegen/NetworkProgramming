@@ -84,7 +84,10 @@ public class App {
         break;
 
       case 3: // Bài tập 3
-
+        System.out.println("Địa chỉ của localhost:");
+        System.out.println(InetAddress.getLocalHost());
+        System.out.println("\nĐịa chỉ của trang web Oracle:");
+        System.out.print(InetAddress.getByName("www.oracle.com") + "\n");
         break;
 
       case 4: // Bài tập 4
