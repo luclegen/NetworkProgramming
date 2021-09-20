@@ -63,6 +63,8 @@ public class App {
     Layout exLayout = new Layout(width, "BÀI TẬP " + index);
     exLayout.header(2);
 
+    Thread main = null;
+
     switch (index) {
       case 1: // Bài tập 1
         N = 4;
@@ -77,7 +79,7 @@ public class App {
       case 2: // Bài tập 2
         N = 3;
 
-        ActiveThread2 main = new ActiveThread2();
+        main = new ActiveThread2();
         for (int i = 1; i <= N; i++)
           threads.add(new ActiveThread2(i));
 
@@ -98,17 +100,17 @@ public class App {
       case 3: // Bài tập 3
         N = 2;
 
-        ActiveThread3 main1 = new ActiveThread3();
+        main = new ActiveThread3();
 
-        main1.start();
+        main.start();
         System.out.print("\n[LUỒNG CHÍNH] đã khởi chạy...");
 
-        synchronized (main1) {
+        synchronized (main) {
           System.out.print("\n[LUỒNG CHÍNH] đang chờ...");
-          main1.wait();
+          main.wait();
         }
 
-        main1.stop();
+        main.stop();
         System.out.print("\n[LUỒNG CHÍNH] đã dừng.");
         break;
 
