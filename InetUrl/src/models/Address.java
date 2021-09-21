@@ -11,7 +11,7 @@ public class Address {
   private String hostName, time, hostAddress;
 
   public Address(String spec) {
-    url = Creator.url(spec);
+    url = Creator.URL(spec);
     hostName = url.getHost();
     hostAddress = Creator.ip(hostName).getHostAddress();
     time = VNDateTime.getDateShortTime(LocalDateTime.now());
