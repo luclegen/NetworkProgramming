@@ -61,6 +61,7 @@ public class App {
     } while (true);
   }
 
+  @Deprecated
   private static void ex(int index) throws IOException {
     Layout exLayout = new Layout(width, "BÀI TẬP " + index);
     exLayout.header(2);
@@ -107,7 +108,11 @@ public class App {
         break;
 
       case 5: // Bài tập 5
+        String[] banList = { "cellphones.com.vn", "www.oracle.com", "172.217.161.164" };
 
+        do {
+          HTML.show(Input.surf(banList));
+        } while (Checker.isContinue());
         break;
 
       case 6: // Bài tập 6
