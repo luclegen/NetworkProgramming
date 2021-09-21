@@ -13,8 +13,20 @@ public class Error {
 				name = "Câu trả lời";
 				break;
 
+			case "spec":
+				name = "Không thể kết nối hay địa chỉ web/IP hoặc hostname";
+				break;
+
 			case "url":
 				name = "Không thể kết nối hoặc địa chỉ URL";
+				break;
+
+			case "host":
+				name = "Không thể kết nối hoặc hostname/địa chỉ IP";
+				break;
+
+			case "hostname":
+				name = "Không thể kết nối hoặc hostname";
 				break;
 
 			case "ip":
@@ -26,7 +38,10 @@ public class Error {
 				break;
 		}
 		switch (type) {
+			case "spec":
 			case "url":
+			case "host":
+			case "hostname":
 			case "ip":
 				extension = ".\nVui lòng kiểm tra kết nối Internet và thử lại sau!\n";
 				break;
