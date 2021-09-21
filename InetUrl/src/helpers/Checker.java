@@ -10,7 +10,7 @@ public class Checker {
 
   public static boolean isContinue() {
     while (true) {
-      System.out.println("Bạn có muốn tiếp tục? (Y/n)");
+      System.out.println("\nBạn có muốn tiếp tục? (Y/n)");
       switch (Input.getInput("Trả lời: ")) {
         case "":
         case "Y":
@@ -42,11 +42,38 @@ public class Checker {
 
   // #region NETWORK
 
-  public static boolean isSuccessConnection(String url) {
+  public static boolean isHostname(String host) {
+    return Pattern.matches("^((?!-)[A-Za-z0-9-]{1,63}(?<!-)\\.)+[A-Za-z]{2,6}$", host);
+  }
+
+  public static boolean isHostAddress(String host) {
+    return Pattern.matches("^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$",
+        host);
+  }
+
+  public static boolean isSuccessConnection(String spec) {
     try {
-      HttpURLConnection connection = (HttpURLConnection) new URL(url).openConnection();
+      HttpURLConnection connection = (HttpURLConnection) new URL(spec).openConnection();
 
       connection.setRequestMethod("GET");
+      connection.setConnectTimeout(3000);
+      connection.connect();
+
+      return connection.getResponseCode() == 200;
+    } catch (IOException e) {
+      return false;
+    }
+  }
+
+  public static boolean isSuccessConnection(URL url) {
+    try {
+      if (url == null)
+        return false;
+
+      HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+
+      connection.setRequestMethod("GET");
+      connection.setConnectTimeout(3000);
       connection.connect();
 
       return connection.getResponseCode() == 200;
