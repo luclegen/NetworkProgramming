@@ -16,7 +16,7 @@ public class Notification {
       default:
         break;
     }
-    System.err.println("THÔNG BÁO: " + msg + ".\n");
+    System.out.println("THÔNG BÁO: " + msg + ".\n");
   }
 
   public static void ban(String type) {
