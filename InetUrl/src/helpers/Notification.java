@@ -19,6 +19,10 @@ public class Notification {
     System.err.println("THÔNG BÁO: " + msg + ".\n");
   }
 
+  public static void ban(String type) {
+    System.err.println("THÔNG BÁO: " + type + " đã bị cấm.\n");
+  }
+
   public static void fail(String type) {
     String msg = null;
     switch (type) {
