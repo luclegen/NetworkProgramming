@@ -1,7 +1,17 @@
 package apps;
 
+import clis.Layout;
+
 public class App3 {
+  private static byte index = 3;
+  private static Layout layout = new Layout(77, "BÀI TẬP " + index);
+
   public static void run() {
-    System.out.println("App 3\n");
+    layout.header(2);
+
+    // Code here
+
+    System.out.print("\n kết thúc bài tập " + index + ".");
+    layout.footer(2);
   }
 }
