@@ -126,7 +126,6 @@ sudo apt install -y default-jdk default-jre
 |  3  | Nguyễn Đắc Minh – 19CNTT1 | :x: | :x: |   |   |   |         |
 |  4  | Tăng Tấn Doan – 19CTUD     | :heavy_check_mark: | :x: |   |   |   |         |
 |  5  | Trần Văn Khải – 19CNTT1   | :x: | :x: |   |   |   |         |
-|  6  | Sivilay Phimmasan – 19CNTT1  | :heavy_check_mark: | :heavy_check_mark: |   |   |   |         |
 
 ### 2. Công thức tính tỷ lệ đóng góp
 
