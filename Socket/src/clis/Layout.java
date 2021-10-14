@@ -1,11 +1,29 @@
 package clis;
 
+import java.io.*;
+
 public class Layout {
 
 	private int width;
 	private String title = "No title";
 
 	public Layout() {
+	}
+
+	public Layout(String title) {
+		try {
+			width = Integer
+					.parseInt(new BufferedReader(new InputStreamReader(Runtime.getRuntime().exec("tput cols").getInputStream()))
+							.readLine());
+		} catch (NumberFormatException | IOException e) {
+			try {
+				width = Integer.parseInt(new BufferedReader(new InputStreamReader(
+						Runtime.getRuntime().exec("PowerShell $Host.UI.RawUI.WindowSize.Width").getInputStream())).readLine());
+			} catch (NumberFormatException | IOException e1) {
+				System.err.println("Lỗi lấy chiều rộng của bố cục: " + e1);
+			}
+		}
+		this.title = title;
 	}
 
 	public Layout(int width, String title) {
@@ -43,6 +61,11 @@ public class Layout {
 			default:
 				break;
 		}
+	}
+
+	public void footer(int level, String notification) {
+		System.out.print(notification);
+		footer(level);
 	}
 
 	public void border(char position, int type) {
