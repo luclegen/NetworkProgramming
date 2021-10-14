@@ -25,7 +25,7 @@ public class App {
         case '2':
         case '3':
         case '4':
-          System.out.println("Nằm ở gói: " + "Socket/src/apps/" + choice + ".\n");
+          System.out.println("Bài tập " + choice + " nằm ở gói: " + "Socket/src/apps/app" + choice + ".\n");
           break;
 
         default:
