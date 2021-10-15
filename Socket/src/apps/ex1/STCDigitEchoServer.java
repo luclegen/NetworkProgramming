@@ -23,7 +23,7 @@ public class STCDigitEchoServer {
           Socket socket = serverSocket.accept();
           BufferedWriter out = new BufferedWriter(new OutputStreamWriter(socket.getOutputStream()));
 
-          System.out.println("Client đã chấp nhận: " + socket);
+          System.out.println("Client đã được chấp nhận: " + socket);
 
           int ch = 0;
           while (true) {
