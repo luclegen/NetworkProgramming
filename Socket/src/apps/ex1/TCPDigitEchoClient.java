@@ -7,7 +7,7 @@ import clis.Layout;
 import helpers.*;
 
 public class TCPDigitEchoClient {
-  private static Layout layout = new Layout(70, "CLIENT");
+  private static Layout layout = new Layout(72, "CLIENT");
 
   public static void main(String[] args) {
     Socket socket = null;
