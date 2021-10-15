@@ -8,7 +8,7 @@ import helpers.Converter;
 
 public class STCDigitEchoServer {
   public final static int SERVER_PORT = 7;
-  private static Layout layout = new Layout(70, "SERVER TUẦN TỰ");
+  private static Layout layout = new Layout(72, "SERVER TUẦN TỰ");
 
   public static void main(String[] args) {
     ServerSocket serverSocket = null;
