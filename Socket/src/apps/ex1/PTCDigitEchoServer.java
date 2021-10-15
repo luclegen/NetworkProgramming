@@ -8,7 +8,7 @@ import models.DigitRequestProcessing;
 
 public class PTCDigitEchoServer {
   public final static int SERVER_PORT = 7;
-  private static Layout layout = new Layout(70, "SERVER TUẦN TỰ");
+  private static Layout layout = new Layout(72, "SERVER SONG SONG");
 
   public static void main(String[] args) {
     layout.header(1);
@@ -22,7 +22,7 @@ public class PTCDigitEchoServer {
         try {
           Socket socket = serverSocket.accept();
 
-          System.out.println("Client đã chấp nhận: " + socket);
+          System.out.println("Client đã được chấp nhận: " + socket);
 
           new DigitRequestProcessing(socket).start();
         } catch (IOException e) {
