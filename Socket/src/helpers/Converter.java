@@ -15,4 +15,11 @@ public class Converter {
     return text.length() > 0 ? toWords(text).substring(0, 1).toUpperCase() + toWords(text).substring(1).toLowerCase()
         : text;
   }
+
+  public static String toReserveMessage(String text) {
+    int i = -1;
+    for (i = text.length() - 1; Character.toString(text.charAt(i)).matches("[^a-zA-Z0-9]"); i--) {
+    }
+    return text.substring(i + 1) + text.substring(0, i + 1);
+  }
 }
