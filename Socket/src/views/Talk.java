@@ -24,6 +24,7 @@ public class Talk extends JFrame {
     super(type + " - Talk");
     setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     setSize(500, 500);
+    setMinimumSize(new Dimension(500, 500));
     setLocation(((int) Toolkit.getDefaultToolkit().getScreenSize().getWidth() - 500) / 2 + 250 * position,
         (int) (Toolkit.getDefaultToolkit().getScreenSize().getHeight() - 500) / 2);
     setLayout(new BorderLayout());
