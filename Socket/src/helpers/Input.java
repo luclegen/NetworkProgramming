@@ -2,6 +2,8 @@ package helpers;
 
 import java.util.*;
 
+import models.HostAddress;
+
 public class Input {
   private static Scanner sc = new Scanner(System.in);
   private static String input = "";
@@ -36,4 +38,18 @@ public class Input {
 
   // endregion GETTER
 
+  // region NETWORK
+
+  public static HostAddress getHostAddress(String description) {
+    while (true) {
+      setInput(description);
+
+      if (Checker.isHostAddress(input))
+        return new HostAddress(input);
+      else
+        Error.invalid("hostAddress");
+    }
+  }
+
+  // endregion NETWORK
 }
