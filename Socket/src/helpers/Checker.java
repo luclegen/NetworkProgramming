@@ -35,7 +35,7 @@ public class Checker {
   }
 
   public static boolean isHostAddress(String host) {
-    return host.matches("^((25[0-5]|2[0-4][0-9]|[1]?[1-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[1]?[1-9][0-9]?)$");
+    return host.matches("^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$");
   }
 
   // #endregion NETWORK
