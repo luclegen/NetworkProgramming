@@ -13,6 +13,23 @@ public class Error {
 				name = "Câu trả lời";
 				break;
 
+			case "hostname":
+				name = "Không thể kết nối hoặc hostname";
+				break;
+
+			case "hostAddress":
+				name = "Không thể kết nối hoặc địa chỉ IP";
+				break;
+
+			default:
+				break;
+		}
+		switch (type) {
+			case "hostname":
+			case "hostAddress":
+				extension = ".\nVui lòng kiểm tra kết nối Internet và thử lại sau!\n";
+				break;
+
 			default:
 				break;
 		}
