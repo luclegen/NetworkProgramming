@@ -54,7 +54,7 @@ public class HostAddress {
 
   @Override
   public String toString() {
-    return String.join(".", (ip[0] > 0 ? ip[0] : ip[0] + 256) + "", (ip[1] > 0 ? ip[1] : ip[1] + 256) + "",
-        (ip[2] > 0 ? ip[2] : ip[2] + 256) + "", (ip[3] > 0 ? ip[3] : ip[3] + 256) + "");
+    return String.join(".", (ip[0] >= 0 ? ip[0] : ip[0] + 256) + "", (ip[1] >= 0 ? ip[1] : ip[1] + 256) + "",
+        (ip[2] >= 0 ? ip[2] : ip[2] + 256) + "", (ip[3] >= 0 ? ip[3] : ip[3] + 256) + "");
   }
 }
