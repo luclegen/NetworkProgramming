@@ -17,7 +17,7 @@ public class STCTalkTelnetServer {
   private static Layout layout = new Layout(72, "SERVER TUẦN TỰ");
   private Message model;
   private Talk view;
-  public final static int SERVER_PORT = 23;
+  private final static int SERVER_PORT = 23;
   private static Socket socket = null;
   private static BufferedWriter out = null;
   private static BufferedReader in = null;
