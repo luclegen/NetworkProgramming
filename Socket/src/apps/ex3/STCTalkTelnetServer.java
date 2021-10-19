@@ -93,7 +93,7 @@ public class STCTalkTelnetServer {
     };
   }
 
-  public void send() {
+  private void send() {
     String content = view.getMessageTextField().getText();
     if (content.length() > 0) {
       try {
