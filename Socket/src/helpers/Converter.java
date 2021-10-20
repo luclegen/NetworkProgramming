@@ -8,7 +8,7 @@ public class Converter {
   }
 
   public static String toWords(String text) {
-    return String.join(" ", text.trim().split("\s+"));
+    return String.join(" ", text.trim().split("\\s+"));
   }
 
   public static String toSentenceCase(String text) {

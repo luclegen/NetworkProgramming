@@ -21,8 +21,8 @@ public class TCPOperationEchoClient {
 
       do {
         String operation = getOperation();
-        String a = operation.split("(\s)*([\\+\\-\\*\\/]){1}(\s)*([-+]?\\d*[.]?\\d+|^[-+]?\\d+[.]?\\d*){1}$")[0];
-        String b = operation.split("^([-+]?\\d*[.]?\\d+|^[-+]?\\d+[.]?\\d*){1}(\s)*([\\+\\-\\*\\/]){1}(\s)*")[1];
+        String a = operation.split("(\\s)*([\\+\\-\\*\\/]){1}(\\s)*([-+]?\\d*[.]?\\d+|^[-+]?\\d+[.]?\\d*){1}$")[0];
+        String b = operation.split("^([-+]?\\d*[.]?\\d+|^[-+]?\\d+[.]?\\d*){1}(\\s)*([\\+\\-\\*\\/]){1}(\\s)*")[1];
         String operator = operation.substring(a.length(), operation.length() - b.length()).trim();
 
         out.write(operator + " " + a + " " + b + "\\n");
@@ -46,7 +46,7 @@ public class TCPOperationEchoClient {
 
   private static boolean isOperation(String raw) {
     return raw.matches(
-        "^([-+]?\\d*[.]?\\d+|^[-+]?\\d+[.]?\\d*){1}(\s)*([\\+\\-\\*\\/]){1}(\s)*([-+]?\\d*[.]?\\d+|^[-+]?\\d+[.]?\\d*){1}$");
+        "^([-+]?\\d*[.]?\\d+|^[-+]?\\d+[.]?\\d*){1}(\\s)*([\\+\\-\\*\\/]){1}(\\s)*([-+]?\\d*[.]?\\d+|^[-+]?\\d+[.]?\\d*){1}$");
   }
 
   private static String getOperation() {

@@ -36,25 +36,25 @@ public class STCOperationEchoServer {
             if (isOperation(raw)) {
               String[] e = raw.substring(0, raw.length() - 2).split(" ");
               switch (e[0]) {
-                case "+":
-                  result = new BigDecimal(e[1]).add(new BigDecimal(e[2])).toString();
-                  break;
+              case "+":
+                result = new BigDecimal(e[1]).add(new BigDecimal(e[2])).toString();
+                break;
 
-                case "-":
-                  result = new BigDecimal(e[1]).subtract(new BigDecimal(e[2])).toString();
-                  break;
+              case "-":
+                result = new BigDecimal(e[1]).subtract(new BigDecimal(e[2])).toString();
+                break;
 
-                case "*":
-                  result = new BigDecimal(e[1]).multiply(new BigDecimal(e[2])).toString();
-                  break;
+              case "*":
+                result = new BigDecimal(e[1]).multiply(new BigDecimal(e[2])).toString();
+                break;
 
-                case "/":
-                  result = new BigDecimal(e[2]).compareTo(BigDecimal.ZERO) == 0 ? "Không thể chia cho số không!"
-                      : new BigDecimal(e[1]).divide(new BigDecimal(e[2])).toString();
-                  break;
+              case "/":
+                result = new BigDecimal(e[2]).compareTo(BigDecimal.ZERO) == 0 ? "Không thể chia cho số không!"
+                    : new BigDecimal(e[1]).divide(new BigDecimal(e[2])).toString();
+                break;
 
-                default:
-                  break;
+              default:
+                break;
               }
             }
             out.write(result);
@@ -80,6 +80,6 @@ public class STCOperationEchoServer {
 
   public static boolean isOperation(String raw) {
     return raw.matches(
-        "^([\\+\\-\\*\\/]){1}(\s){1}([-+]?\\d*[.]?\\d+|^[-+]?\\d+[.]?\\d*){1}(\s){1}([-+]?\\d*[.]?\\d+|^[-+]?\\d+[.]?\\d*){1}(\\\\n){1}$");
+        "^([\\+\\-\\*\\/]){1}(\\s){1}([-+]?\\d*[.]?\\d+|^[-+]?\\d+[.]?\\d*){1}(\\s){1}([-+]?\\d*[.]?\\d+|^[-+]?\\d+[.]?\\d*){1}(\\\\n){1}$");
   }
 }
