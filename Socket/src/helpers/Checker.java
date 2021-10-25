@@ -8,25 +8,41 @@ public class Checker {
     while (true) {
       System.out.println("\nBạn có muốn tiếp tục? (Y/n)");
       switch (Input.getInput("Trả lời: ")) {
-        case "":
-        case "Y":
-        case "y":
-          System.out.println();
-          return true;
+      case "":
+      case "Y":
+      case "y":
+        System.out.println();
+        return true;
 
-        case "n":
-        case "N":
-          System.out.println();
-          return false;
+      case "n":
+      case "N":
+        System.out.println();
+        return false;
 
-        default:
-          Error.invalid("answer");
-          break;
+      default:
+        Error.invalid("answer");
+        break;
       }
     }
   }
 
   // endregion INPUT
+
+  // #region STRING
+
+  public static boolean isUsername(String input) {
+    return input.matches("^[a-zA-Z0-9._-]+$");
+  }
+
+  // #endregion STRING
+
+  // #region CHARACTER
+
+  public static boolean isChar(String input) {
+    return input.matches(".{1}");
+  }
+
+  // #endregion CHARACTER
 
   // #region NETWORK
 
