@@ -1,5 +1,7 @@
 package helpers;
 
+import java.util.Scanner;
+
 import classes.HostAddress;
 
 public class Input {
@@ -8,27 +10,29 @@ public class Input {
   // region GETTERS AND SETTERS
 
   public static String getInput() {
-    return System.console().readLine();
+    return System.console() != null ? System.console().readLine() : new Scanner(System.in).nextLine();
   }
 
   public static void setInput() {
-    input = System.console().readLine();
-  }
-
-  public static void setInput(String description) {
-    input = System.console().readLine(description);
+    input = getInput();
   }
 
   public static String getInput(String description) {
-    return System.console().readLine(description);
+    if (System.console() == null)
+      System.out.println(description);
+    return System.console() != null ? System.console().readLine(description) : new Scanner(System.in).nextLine();
+  }
+
+  public static void setInput(String description) {
+    input = getInput(description);
   }
 
   public static String getInput(String defaultValue, String description) {
-    input = System.console().readLine(description);
+    input = getInput(description);
     return input.equals("") ? defaultValue : input;
   }
 
-  // endregion GETTERS AND SETTERS
+  // endregion region GETTERS AND SETTERS
 
   // region STRING
 
@@ -66,19 +70,21 @@ public class Input {
   // region PASSWORD
 
   public static String getPassword(String description) {
-    return new String(System.console().readPassword(description));
+    if (System.console() == null)
+      System.out.println(description);
+    return System.console() != null ? new String(System.console().readPassword(description))
+        : new Scanner(System.in).nextLine();
   }
 
   public static void setPassword(String description) {
-    input = new String(System.console().readPassword(description));
+    input = getPassword(description);
   }
 
   public static String getPassword(String description1, String description2) {
     while (true) {
       setPassword(description1);
-
       if (input.length() > 7) {
-        if (input.equals(new String(System.console().readPassword(description2))))
+        if (input.equals(getPassword(description2)))
           return input;
         else
           Notification.fail("password");
