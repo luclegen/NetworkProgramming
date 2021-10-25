@@ -12,24 +12,22 @@ public class App {
     char choice = '0';
     do {
       System.out.println("Hãy chọn số bài tập mà bạn cần thực hiện? (1 -> 4 | 0: Để thoát chương trình)");
-      choice = Input.getChar("Trả lời: ");
+      switch (choice = Input.getChar("Trả lời: ")) {
+      case '0':
+        System.out.print("\nĐã thoát chương trình.");
+        layout.footer(1);
+        System.exit(0);
+        break;
 
-      switch (choice) {
-        case '0':
-          System.out.print("\nĐã thoát chương trình.");
-          layout.footer(1);
-          System.exit(0);
-          break;
+      case '1':
+      case '2':
+      case '3':
+      case '4':
+        System.out.println("Bài tập " + choice + " nằm ở gói: " + "apps.ex" + choice + ".\n");
+        break;
 
-        case '1':
-        case '2':
-        case '3':
-        case '4':
-          System.out.println("Bài tập " + choice + " nằm ở gói: " + "Socket/src/apps/ex" + choice + ".\n");
-          break;
-
-        default:
-          Error.invalid("answer");
+      default:
+        Error.invalid("answer");
       }
     } while (true);
   }
