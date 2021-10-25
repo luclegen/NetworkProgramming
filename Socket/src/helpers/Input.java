@@ -1,42 +1,108 @@
 package helpers;
 
-import java.util.*;
-
 import classes.HostAddress;
 
 public class Input {
-  private static Scanner sc = new Scanner(System.in);
   private static String input = "";
 
-  // region SETTER
+  // region GETTERS AND SETTERS
+
+  public static String getInput() {
+    return System.console().readLine();
+  }
+
   public static void setInput() {
-    input = sc.nextLine();
+    input = System.console().readLine();
   }
 
   public static void setInput(String description) {
-    System.out.print(description);
-    input = sc.nextLine();
-  }
-  // endregion SETTER
-
-  // region GETTER
-
-  public static String getInput() {
-    setInput();
-    return input;
+    input = System.console().readLine(description);
   }
 
   public static String getInput(String description) {
-    setInput(description);
+    return System.console().readLine(description);
+  }
+
+  public static String getInput(String defaultValue, String description) {
+    input = System.console().readLine(description);
+    return input.equals("") ? defaultValue : input;
+  }
+
+  // endregion GETTERS AND SETTERS
+
+  // region STRING
+
+  public static String getString(String type, String description) {
+    while (true) {
+      switch (type) {
+      case "msg":
+      case "username":
+        setInput(description);
+        break;
+
+      case "password":
+        setPassword(description);
+        break;
+
+      default:
+        Error.invalid("type");
+        break;
+      }
+
+      if (type == "msg" && input.length() > 0)
+        break;
+      else if (type == "username" && Checker.isUsername(input))
+        break;
+      else if (type == "password" && input.length() > 7)
+        break;
+      else
+        Error.invalid(type);
+    }
     return input;
   }
 
-  public static char getChar(String description) {
-    setInput(description);
-    return input.charAt(0);
+  // endregion STRING
+
+  // region PASSWORD
+
+  public static String getPassword(String description) {
+    return new String(System.console().readPassword(description));
   }
 
-  // endregion GETTER
+  public static void setPassword(String description) {
+    input = new String(System.console().readPassword(description));
+  }
+
+  public static String getPassword(String description1, String description2) {
+    while (true) {
+      setPassword(description1);
+
+      if (input.length() > 7) {
+        if (input.equals(new String(System.console().readPassword(description2))))
+          return input;
+        else
+          Notification.fail("password");
+      } else
+        Error.invalid("password");
+    }
+  }
+
+  // endregion PASSWORD
+
+  // region CHARACTER
+
+  public static char getChar(String description) {
+    while (true) {
+      setInput(description);
+
+      if (Checker.isChar(input))
+        return input.charAt(0);
+      else
+        Error.invalid("char");
+    }
+  }
+
+  // endregion CHARACTER
 
   // region NETWORK
 
