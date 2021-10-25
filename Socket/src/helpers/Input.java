@@ -2,7 +2,7 @@ package helpers;
 
 import java.util.*;
 
-import models.HostAddress;
+import classes.HostAddress;
 
 public class Input {
   private static Scanner sc = new Scanner(System.in);
