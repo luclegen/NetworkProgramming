@@ -19,7 +19,7 @@ public class Input {
 
   public static String getInput(String description) {
     if (System.console() == null)
-      System.out.println(description);
+      System.out.print(description);
     return System.console() != null ? System.console().readLine(description) : new Scanner(System.in).nextLine();
   }
 
@@ -71,7 +71,7 @@ public class Input {
 
   public static String getPassword(String description) {
     if (System.console() == null)
-      System.out.println(description);
+      System.out.print(description);
     return System.console() != null ? new String(System.console().readPassword(description))
         : new Scanner(System.in).nextLine();
   }
