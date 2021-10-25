@@ -3,8 +3,8 @@ package apps.ex2;
 import java.io.*;
 import java.net.*;
 
+import classes.OperationRequestProcessing;
 import clis.Layout;
-import models.OperationRequestProcessing;
 
 public class PTCOperationEchoServer {
   public final static int SERVER_PORT = 7;

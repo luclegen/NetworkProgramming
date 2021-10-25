@@ -3,8 +3,8 @@ package apps.ex1;
 import java.io.*;
 import java.net.*;
 
+import classes.DigitRequestProcessing;
 import clis.Layout;
-import models.DigitRequestProcessing;
 
 public class PTCDigitEchoServer {
   public final static int SERVER_PORT = 7;
