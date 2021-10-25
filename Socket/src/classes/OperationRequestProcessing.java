@@ -29,25 +29,25 @@ public class OperationRequestProcessing extends Thread {
         if (STCOperationEchoServer.isOperation(raw)) {
           String[] e = raw.substring(0, raw.length() - 2).split(" ");
           switch (e[0]) {
-            case "+":
-              result = new BigDecimal(e[1]).add(new BigDecimal(e[2])).toString();
-              break;
+          case "+":
+            result = new BigDecimal(e[1]).add(new BigDecimal(e[2])).toString();
+            break;
 
-            case "-":
-              result = new BigDecimal(e[1]).subtract(new BigDecimal(e[2])).toString();
-              break;
+          case "-":
+            result = new BigDecimal(e[1]).subtract(new BigDecimal(e[2])).toString();
+            break;
 
-            case "*":
-              result = new BigDecimal(e[1]).multiply(new BigDecimal(e[2])).toString();
-              break;
+          case "*":
+            result = new BigDecimal(e[1]).multiply(new BigDecimal(e[2])).toString();
+            break;
 
-            case "/":
-              result = new BigDecimal(e[2]).compareTo(BigDecimal.ZERO) == 0 ? "Không thể chia cho số không!"
-                  : new BigDecimal(e[1]).divide(new BigDecimal(e[2])).toString();
-              break;
+          case "/":
+            result = new BigDecimal(e[2]).compareTo(BigDecimal.ZERO) == 0 ? "Không thể chia cho số không!"
+                : new BigDecimal(e[1]).divide(new BigDecimal(e[2])).toString();
+            break;
 
-            default:
-              break;
+          default:
+            break;
           }
         }
         out.write(result);
