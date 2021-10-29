@@ -24,8 +24,10 @@ public class HTML {
     if (spec == null)
       return;
     BufferedReader reader = reader(Creator.URL(spec));
-    if (reader == null)
+    if (reader == null) {
+      System.err.println("Không thể kết nối để lấy nội dung trang web!");
       return;
+    }
     try {
       System.out.println();
       while ((line = reader.readLine()) != null)
