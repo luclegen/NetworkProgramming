@@ -28,7 +28,7 @@ public class HostAddress {
 
     try {
       try {
-        spec = InetAddress.getByName(new URL("https://brew.sh/").getHost()).getHostAddress();
+        spec = InetAddress.getByName(new URL(spec).getHost()).getHostAddress();
       } catch (UnknownHostException e) {
         Error.invalid("address");
       }
