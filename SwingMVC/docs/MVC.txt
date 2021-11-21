@@ -7,3 +7,9 @@ VD: Người Dùng, Quản Trị Viên,...
 VD: Cửa sổ đăng nhập, đăng ký,...
 3. Controller: Trình điều khiển xử lý các sự kiện với mỗi tương tác của người dùng với View
 VD: Các sự kiện nhận diện của tương tác: Nhấn vào nút đăng nhập, đăng ký,...
+
+CRUD
+Create: Tạo dữ liệu từ Model
+Read: Đọc dữ liệu từ Model
+Update: Cập nhật dữ liệu từ Model
+Delete: Xóa dữ liệu từ Model
