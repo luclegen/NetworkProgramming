@@ -1,0 +1,9 @@
+MVC Pattern
+https://vi.wikipedia.org/wiki/MVC
+- Là mô hình xoay quanh 3 thành phần:
+1. Model: Mô hình của dữa liệu
+VD: Người Dùng, Quản Trị Viên,...
+2. View: Khung nhìn mà người dùng có thể nhìn thấy và tương tác
+VD: Cửa sổ đăng nhập, đăng ký,...
+3. Controller: Trình điều khiển xử lý các sự kiện với mỗi tương tác của người dùng với View
+VD: Các sự kiện nhận diện của tương tác: Nhấn vào nút đăng nhập, đăng ký,...
