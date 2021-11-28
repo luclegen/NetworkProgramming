@@ -7,6 +7,8 @@ Network Programming (Workspace)
 1. Huỳnh Tấn Lực - 16CNTT1: huynhtanluc.auto@gmail.com
 2. Trần Văn Khải - 19CNTT1: vankhaihpb@gmail.com
 3. Ngô Hoàng Thiện - 17 CNTT2 : thienngohoang99@gmal.com
+4. Nguyễn Đắc Minh - 19CNTT1: nguyendacminh123456789@gmail.com
+
 ## I. Cài đặt GitHub Desktop
 
 ### 1. macOS và Windows
