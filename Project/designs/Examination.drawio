@@ -130,7 +130,7 @@
                         <mxPoint x="1349.5" y="751.75" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="PCvY9RVtnEplVj5DhOxz-122" value="&lt;span lang=&quot;EN-US&quot; style=&quot;font-size: 13.0pt ; line-height: 115% ; font-family: &amp;#34;times new roman&amp;#34; , serif&quot;&gt;Statistics tests&lt;br&gt;(Thống kê&lt;/span&gt;&lt;span style=&quot;font-size: 13.0pt ; line-height: 115% ; font-family: &amp;#34;times new roman&amp;#34; , serif&quot;&gt;&amp;nbsp;bài thi)&lt;br&gt;&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+                <mxCell id="PCvY9RVtnEplVj5DhOxz-122" value="&lt;span lang=&quot;EN-US&quot; style=&quot;font-size: 13.0pt ; line-height: 115% ; font-family: &amp;#34;times new roman&amp;#34; , serif&quot;&gt;Statistics exams&lt;br&gt;(Thống kê&lt;/span&gt;&lt;span style=&quot;font-size: 13.0pt ; line-height: 115% ; font-family: &amp;#34;times new roman&amp;#34; , serif&quot;&gt;&amp;nbsp;bài thi)&lt;br&gt;&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
                     <mxGeometry x="1041.75" y="781.75" width="185" height="69" as="geometry"/>
                 </mxCell>
                 <mxCell id="PCvY9RVtnEplVj5DhOxz-123" value="" style="edgeStyle=none;html=1;endArrow=none;verticalAlign=bottom;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.3333333333333333;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="PCvY9RVtnEplVj5DhOxz-122" target="106">
