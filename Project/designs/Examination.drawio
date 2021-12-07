@@ -61,8 +61,8 @@
                         <mxPoint x="529.5" y="678" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="43" value="&lt;font face=&quot;times new roman, serif&quot;&gt;&lt;span style=&quot;font-size: 17.3333px&quot;&gt;Choose an exam room&lt;br&gt;(Chọn phòng thi)&lt;/span&gt;&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
-                    <mxGeometry x="781.5" y="727.25" width="170" height="71" as="geometry"/>
+                <mxCell id="43" value="&lt;font face=&quot;times new roman, serif&quot;&gt;&lt;span style=&quot;font-size: 17.3333px&quot;&gt;Select an exam subject&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size: 17.3333px&quot;&gt;(Chọn môn thi)&lt;/span&gt;&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+                    <mxGeometry x="781.5" y="727.25" width="178.5" height="71" as="geometry"/>
                 </mxCell>
                 <mxCell id="44" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="edgeStyle=none;html=1;endArrow=open;verticalAlign=bottom;dashed=1;labelBackgroundColor=none;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="41" target="43" edge="1">
                     <mxGeometry width="160" relative="1" as="geometry">
@@ -104,7 +104,7 @@
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="120" value="&lt;span lang=&quot;EN-US&quot; style=&quot;font-size: 13.0pt ; line-height: 115% ; font-family: &amp;#34;times new roman&amp;#34; , serif&quot;&gt;Manage candidates&lt;br&gt;(Quản&lt;/span&gt;&lt;span style=&quot;font-size: 13.0pt ; line-height: 115% ; font-family: &amp;#34;times new roman&amp;#34; , serif&quot;&gt; lý thí sinh)&lt;br&gt;&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
-                    <mxGeometry x="1023" y="477" width="163" height="69" as="geometry"/>
+                    <mxGeometry x="1004" y="477" width="182" height="69" as="geometry"/>
                 </mxCell>
                 <mxCell id="121" value="Create/Read/Update/Delete&#10;Tạo/Đọc/Cập nhật/Xóa" style="shape=note;size=15;spacingLeft=5;align=left;whiteSpace=wrap;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
                     <mxGeometry x="790.5" y="577.5" width="171" height="38" as="geometry"/>
@@ -115,8 +115,8 @@
                         <mxPoint x="1019" y="554.63" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="2AbSQogmMVi--ld2LGf0-122" value="&lt;span lang=&quot;EN-US&quot; style=&quot;font-size: 13.0pt ; line-height: 115% ; font-family: &amp;#34;times new roman&amp;#34; , serif&quot;&gt;Manage exam rooms&lt;br&gt;(Quản&lt;/span&gt;&lt;span style=&quot;font-size: 13.0pt ; line-height: 115% ; font-family: &amp;#34;times new roman&amp;#34; , serif&quot;&gt; lý phòng thi)&lt;br&gt;&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
-                    <mxGeometry x="1024" y="645" width="162" height="69" as="geometry"/>
+                <mxCell id="2AbSQogmMVi--ld2LGf0-122" value="&lt;span lang=&quot;EN-US&quot; style=&quot;font-size: 13.0pt ; line-height: 115% ; font-family: &amp;#34;times new roman&amp;#34; , serif&quot;&gt;Manage exam subjects&lt;br&gt;(Quản&lt;/span&gt;&lt;span style=&quot;font-size: 13.0pt ; line-height: 115% ; font-family: &amp;#34;times new roman&amp;#34; , serif&quot;&gt; lý môn thi)&lt;br&gt;&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+                    <mxGeometry x="999" y="645" width="187" height="69" as="geometry"/>
                 </mxCell>
                 <mxCell id="2AbSQogmMVi--ld2LGf0-124" value="" style="endArrow=none;dashed=1;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0;exitDx=171;exitDy=15;exitPerimeter=0;" edge="1" source="121" parent="1" target="2AbSQogmMVi--ld2LGf0-122">
                     <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -131,7 +131,7 @@
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="PCvY9RVtnEplVj5DhOxz-122" value="&lt;span lang=&quot;EN-US&quot; style=&quot;font-size: 13.0pt ; line-height: 115% ; font-family: &amp;#34;times new roman&amp;#34; , serif&quot;&gt;Statistics tests&lt;br&gt;(Thống kê&lt;/span&gt;&lt;span style=&quot;font-size: 13.0pt ; line-height: 115% ; font-family: &amp;#34;times new roman&amp;#34; , serif&quot;&gt;&amp;nbsp;bài thi)&lt;br&gt;&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
-                    <mxGeometry x="1024" y="561" width="162" height="69" as="geometry"/>
+                    <mxGeometry x="1001" y="561" width="185" height="69" as="geometry"/>
                 </mxCell>
                 <mxCell id="PCvY9RVtnEplVj5DhOxz-123" value="" style="edgeStyle=none;html=1;endArrow=none;verticalAlign=bottom;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.3333333333333333;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="PCvY9RVtnEplVj5DhOxz-122" target="106">
                     <mxGeometry width="160" relative="1" as="geometry">
