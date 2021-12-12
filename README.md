@@ -25,22 +25,31 @@ Cài cả hai:
 ### 1. Visual Studio Code (Code Editor)
 
 Download tại: [https://code.visualstudio.com/](https://code.visualstudio.com/)
+#### a) Cài đặt bộ phím tắt
+```
+@category:"keymaps" 
+```
+#### b) Cài đặt tiện tích cho Java
+```
+vscjava.vscode-java-pack
+```
+#### c) Cài đặt tiện tích cho PDF
+```
+tomoki1207.pdf
+```
+#### d) Cài đặt tiện tích cho Office
+```
+cweijan.vscode-office
+```
+#### e) Cài đặt tiện tích cho Git
+```
+eamodio.gitlens
+```
+#### f) Cài đặt tiện tích cho Draw.io
 
-#### a) Cài đặt tiện tích cho Java
-
-Download tại: [https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack)
-
-#### b) Cài đặt tiện tích cho PDF
-
-Download tại: [https://marketplace.visualstudio.com/items?itemName=tomoki1207.pdf](https://marketplace.visualstudio.com/items?itemName=tomoki1207.pdf)
-
-#### c) Cài đặt tiện tích cho Office
-
-Download tại: [https://marketplace.visualstudio.com/items?itemName=cweijan.vscode-office](https://marketplace.visualstudio.com/items?itemName=cweijan.vscode-office)
-
-#### d) Cài đặt tiện tích cho Git
-
-Download tại: [https://marketplace.visualstudio.com/items?itemName=donjayamanne.githistory](https://marketplace.visualstudio.com/items?itemName=donjayamanne.githistory)
+```
+hediet.vscode-drawio
+```
 
 ### 2. Apache NetBeans LTS (IDE)
 
@@ -50,7 +59,7 @@ Download tại: [https://netbeans.apache.org/download/](https://netbeans.apache.
 
 Download tại: [https://git-scm.com/](https://git-scm.com/)
 
-#### Bước 1: Mở Git bash hoặc Terminal để thiết lập git bằng cách sao chép rồi dán vào VSCode và điền thông tin vào đoạn lệnh sau:
+#### Bước 1: Mở Git  hoặc Terminal để thiết lập git bằng cách sao chép rồi dán vào VSCode và điền thông tin vào đoạn lệnh sau:
 
 ```shell
 git config --global user.name "Ho Va Ten"
