@@ -32,3 +32,7 @@ hs_err_pid*
 /Socket/build/
 /Socket/dist/
 /Project/build/
+/TCPSocket/nbproject/private/
+/TCPSocket/build/
+/UDPSocket/nbproject/private/
+/UDPSocket/build/
