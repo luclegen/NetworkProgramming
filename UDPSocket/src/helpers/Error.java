@@ -13,6 +13,10 @@ public abstract class Error {
         name = "Ký tự";
         break;
 
+      case "operation":
+        name = "Phép toán";
+        break;
+
       default:
         name = "Tên lỗi";
         break;
