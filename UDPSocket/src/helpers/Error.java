@@ -18,7 +18,7 @@ public abstract class Error {
         break;
 
       default:
-        name = "Tên lỗi";
+        name = "Loại lỗi";
         break;
     }
     System.err.println("LỖI: " + name + reason + extension);
