@@ -40,8 +40,13 @@ public class UDPOperationEchoServer {
               break;
 
             case "/":
-              result = new BigDecimal(e[2]).compareTo(BigDecimal.ZERO) == 0 ? "Không thể chia cho số không!"
-                  : new BigDecimal(e[1]).divide(new BigDecimal(e[2])).toString();
+              try {
+                result = new BigDecimal(e[2]).compareTo(BigDecimal.ZERO) == 0 ? "Không thể chia cho số không!"
+                    : new BigDecimal(e[1]).divide(new BigDecimal(e[2])).toString();
+              } catch (Exception ex) {
+                result = new BigDecimal(e[2]).compareTo(BigDecimal.ZERO) == 0 ? "Không thể chia cho số không!"
+                    : Double.toString(new BigDecimal(e[1]).doubleValue() / new BigDecimal(e[2]).doubleValue());
+              }
               break;
 
             default:
