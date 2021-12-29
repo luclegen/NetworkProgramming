@@ -36,6 +36,14 @@ public abstract class Checker {
 
   // #endregion CHARACTER
 
+  // #region STRING
+
+  public static boolean isUsername(String input) {
+    return input.matches("^[a-zA-Z0-9._-]+$");
+  }
+
+  // #endregion STRING
+
   // #region NUMBER
 
   public static boolean isInteger(String input) {
