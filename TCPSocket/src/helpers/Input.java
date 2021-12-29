@@ -32,6 +32,65 @@ public abstract class Input {
 
   // endregion CHARACTER
 
+  // region STRING
+
+  public static String getString(String type, String description) {
+    while (true) {
+      switch (type) {
+        case "msg":
+        case "username":
+          setInput(description);
+          break;
+
+        case "password":
+          setPassword(description);
+          break;
+
+        default:
+          Error.invalid("type");
+          break;
+      }
+
+      if (type == "msg" && input.length() > 0)
+        break;
+      else if (type == "username" && Checker.isUsername(input))
+        break;
+      else if (type == "password" && input.length() > 7)
+        break;
+      else
+        Error.invalid(type);
+    }
+    return input;
+  }
+
+  // endregion STRING
+
+  // region PASSWORD
+
+  public static String getPassword(String description) {
+    if (System.console() == null)
+      System.out.print(description);
+    return System.console() != null ? new String(System.console().readPassword(description))
+        : new Scanner(System.in).nextLine();
+  }
+
+  public static void setPassword(String description) {
+    input = getPassword(description);
+  }
+
+  public static String getPassword(String description1, String description2) {
+    while (true) {
+      setPassword(description1);
+      if (input.length() > 7) {
+        if (input.equals(getPassword(description2)))
+          return input;
+        else
+          Notification.fail("password");
+      } else
+        Error.invalid("password");
+    }
+  }
+
   // region NETWORK
 
   public static HostAddress getHostAddress(String description) {
