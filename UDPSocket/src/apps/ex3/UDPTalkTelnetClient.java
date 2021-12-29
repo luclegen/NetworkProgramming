@@ -2,6 +2,7 @@ package apps.ex3;
 
 import java.net.*;
 
+import clis.Layout;
 import controllers.TalkController;
 import helpers.Input;
 import models.Message;
@@ -10,6 +11,7 @@ import views.TalkView;
 import java.io.*;
 
 public class UDPTalkTelnetClient extends TalkController {
+  private static Layout layout = new Layout(72, "CLIENT KHÔNG KẾT NỐI");
   private final static int SERVER_PORT = 23;
   private static DatagramSocket datagramSocket = null;
   private static InetAddress server = null;
@@ -45,6 +47,7 @@ public class UDPTalkTelnetClient extends TalkController {
       server = InetAddress.getByAddress(Input.getHostAddress("Hãy nhập địa chỉ IP của server: ").getIp());
       UDPTalkTelnetClient client = new UDPTalkTelnetClient(new Message(Input.getInput("Hãy nhập tên bạn: ")),
           new TalkView("Client", TalkView.RIGHT));
+      layout.header(1);
       while (true) {
         packet = new DatagramPacket(buffer, buffer.length);
         datagramSocket.receive(packet);
