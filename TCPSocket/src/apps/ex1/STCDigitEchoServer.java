@@ -29,7 +29,7 @@ public class STCDigitEchoServer {
           while (true) {
             String input = in.readLine();
 
-            out.write(Converter.integerToWords(input));
+            out.write(Converter.toSentence(Converter.integerToWords(input)));
             out.newLine();
             out.flush();
           }
