@@ -73,6 +73,10 @@ public class Converter {
     return words;
   }
 
+  public static String toSentence(String text) {
+    return text.length() > 0 ? toWords(text).substring(0, 1).toUpperCase() + toWords(text).substring(1) : text;
+  }
+
   public static String toWords(String text) {
     return String.join(" ", text.trim().split("\\s+"));
   }
