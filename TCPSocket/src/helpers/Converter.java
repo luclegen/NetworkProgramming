@@ -61,9 +61,10 @@ public class Converter {
                                 ? "lăm"
                                 : integerToWords(number.substring(index)))
                     : ""
-                : (new BigInteger(number.substring(index)).compareTo(BigInteger.ZERO) == 0
-                    ? ""
-                    : " ")
+                : (new BigInteger(number.substring(0, index)).compareTo(BigInteger.ZERO) == 0
+                    || new BigInteger(number.substring(index)).compareTo(BigInteger.ZERO) == 0
+                        ? ""
+                        : " ")
                     + integerToWords(number.substring(index));
         }
       }
@@ -74,10 +75,6 @@ public class Converter {
 
   public static String toWords(String text) {
     return String.join(" ", text.trim().split("\\s+"));
-  }
-
-  public static String toSentence(String text) {
-    return text.length() > 0 ? toWords(text).substring(0, 1).toUpperCase() + toWords(text).substring(1) : text;
   }
 
   public static String toReserveMessage(String text) {
