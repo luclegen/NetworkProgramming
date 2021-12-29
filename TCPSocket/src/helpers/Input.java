@@ -2,6 +2,8 @@ package helpers;
 
 import java.util.*;
 
+import classes.HostAddress;
+
 public abstract class Input {
   private static String input = "";
 
@@ -30,4 +32,18 @@ public abstract class Input {
 
   // endregion CHARACTER
 
+  // region NETWORK
+
+  public static HostAddress getHostAddress(String description) {
+    while (true) {
+      setInput(description);
+
+      if (Checker.isHostAddress(input))
+        return new HostAddress(input);
+      else
+        Error.invalid("hostAddress");
+    }
+  }
+
+  // endregion NETWORK
 }
