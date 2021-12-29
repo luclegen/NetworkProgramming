@@ -25,6 +25,10 @@ public abstract class Error {
         name = "Không thể kết nối hoặc địa chỉ IP";
         break;
 
+      case "username":
+        name = "Tên người dùng";
+        break;
+
       case "password":
         name = "Mật khẩu";
         break;
