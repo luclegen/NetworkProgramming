@@ -25,11 +25,22 @@ public abstract class Error {
         name = "Không thể kết nối hoặc địa chỉ IP";
         break;
 
+      case "password":
+        name = "Mật khẩu";
+        break;
+
       default:
         name = "Tên lỗi";
         break;
     }
+    switch (type) {
+      case "password":
+        reason = " chứa ít nhất 8 ký tự";
+        break;
 
+      default:
+        break;
+    }
     switch (type) {
       case "hostAddress":
         extension = ".\nVui lòng kiểm tra kết nối Internet và thử lại sau!\n";
