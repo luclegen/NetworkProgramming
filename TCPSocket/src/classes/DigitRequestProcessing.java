@@ -21,7 +21,7 @@ public class DigitRequestProcessing extends Thread {
       while (true) {
         String input = in.readLine();
 
-        out.write(Converter.toSentence(Converter.integerToWords(input)));
+        out.write(Converter.integerToWords(input));
         out.newLine();
         out.flush();
       }
