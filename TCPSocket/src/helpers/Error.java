@@ -21,8 +21,21 @@ public abstract class Error {
         name = "Phép toán";
         break;
 
+      case "hostAddress":
+        name = "Không thể kết nối hoặc địa chỉ IP";
+        break;
+
       default:
         name = "Tên lỗi";
+        break;
+    }
+
+    switch (type) {
+      case "hostAddress":
+        extension = ".\nVui lòng kiểm tra kết nối Internet và thử lại sau!\n";
+        break;
+
+      default:
         break;
     }
     System.err.println("LỖI: " + name + reason + extension);
