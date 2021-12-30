@@ -36,7 +36,7 @@ hs_err_pid*
 /TCPSocket/build/
 /UDPSocket/nbproject/private/
 /UDPSocket/build/
-/RPC/nbproject/private/
-/RMI/nbproject/private/
-/RPC/build/
-/RMI/build/
+/RPC_RMI/nbproject/private/
+/Serialization/nbproject/private/
+/RPC_RMI/build/
+/Serialization/build/
