@@ -1,8 +1,10 @@
 package models;
 
+import java.io.Serializable;
+
 import helpers.PBKDF2;
 
-public class User {
+public class User implements Serializable {
   public int id;
   private String name;
   private String surname;

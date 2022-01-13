@@ -12,15 +12,18 @@ public class App {
 	public static void main(String[] args) throws Exception {
 		List<User> users = new ArrayList<>();
 
-		User admin = new User(
-				Input.getInput(
-						"Tên           : "),
-				Input.getInput(
-						"Họ            : "),
-				Input.getUsername(users,
-						"Tên người dùng: "),
-				Input.getPassword("Mật khẩu      : ", "Xác nhận      : "), Type.Admin);
-		UserDAO.create(admin);
+		// User admin = new User(
+		// Input.getInput(
+		// "Tên : "),
+		// Input.getInput(
+		// "Họ : "),
+		// Input.getUsername(users,
+		// "Tên người dùng: "),
+		// Input.getPassword("Mật khẩu : ", "Xác nhận : "), Type.Admin);
+
+		// User admin = new User("Lực", "Huỳnh Tấn", "luc", "Luc123!@#", Type.Admin);
+
+		// UserDAO.create(admin);
 
 		new LoginController(new User(), new LoginView());
 	}
